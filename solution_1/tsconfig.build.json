@@ -1,0 +1,20 @@
+{
+    "extends": "./tsconfig.base.json",
+
+    "files": [
+        "MathExpression.ts",
+        "widget.ts"
+    ],
+    
+    /* tests are run by ts-jest, we don't want tsc to compile them */
+    "exclude": [
+        "tests/**/*",
+        "public_html/**/*"
+    ],
+    
+    "compilerOptions": {
+      /* Visit https://aka.ms/tsconfig to read more about this file */
+
+      "outDir": "public_html/js",  
+    }
+  }

@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Math expression evaluator</title>
+    <link rel="stylesheet" href="./widget.css">
+</head>
+
+<body>
+    <div>Javascript / Node TestRunner / ES6 modules</div>
+    <h1>Expression Evaluator - Tabulation evaluator</h1>
+    <h2>SOLUTION 3</h2>
+    <div id="container">
+        <p id="math-expression-error" class="outputs"></p>
+        <p id="math-expression-result" class="outputs"></p>
+        <form >
+            <input id="math-expression-input" type="text" 
+                name="math-expression" placeholder="Enter an Expression" 
+                value="5 * 4 - 3 - 5 ^ 3">
+            </input>
+            <button type="button" id="math-expression-button">Calculate</button>
+        </form>
+    </div>
+    <!-- Enable CommonJS modules for lazy loading -->
+    <script type="module" src="./widget.js"></script>
+</body>
+
+</html>

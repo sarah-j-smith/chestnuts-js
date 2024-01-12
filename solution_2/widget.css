@@ -1,0 +1,62 @@
+/* Add CSS here */
+@font-face {
+    font-family: sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+}
+
+/** Fix box issues */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: max(60vw, 200px);
+    background-color: lightgray;
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px black;
+}
+
+#math-expression-input {
+    margin: auto 0;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: solid 2px green;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#math-expression-error {
+    border-radius: 5px;    
+    visibility: hidden;
+    margin: auto 0;
+    padding: 1em;
+    padding-top: 0.2em;
+    color: red;
+}
+
+#math-expression-result {
+    padding: 10px;
+    color: black;
+    background-color: whitesmoke;
+    margin: auto 0 20px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: orange;
+    font-size: large;
+    padding: 0.5em 2.0em;
+}

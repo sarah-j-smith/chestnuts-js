@@ -1,0 +1,18 @@
+{
+  "name": "session_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "widget.js",
+  "scripts": {
+    "test": "jest ./tests",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "npx serve public_html"
+  },
+  "author": "Sarah Smith <sez@storybridge.org>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  }
+}

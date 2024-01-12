@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Math expression evaluator</title>
+    <link rel="stylesheet" href="./widget.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div>Math expression evaluator - Javascript / Node TestRunner / ES6 modules</div>
+    <div>SOLUTION 2</div>
+    <h1>Expression Evaluator - AST Expression tree evaluator</h1>
+    <div id="container">
+        <div class="panel">
+            <p id="math-expression-result" class="outputs">Result:</p>
+            <input id="math-expression-input" type="text" 
+                name="math-expression" placeholder="Enter an Expression" 
+                value="5 * 4 - 3 - 5 ^ 3">
+            </input>
+            <div id="math-expression-error" class="outputs">Error:</div>
+            <button type="button" id="math-expression-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg>
+                Calculate
+            </button>
+        </div>
+    </div>
+    <!-- Enable CommonJS modules for lazy loading -->
+    <script type="module" src="./widget.js"></script>
+</body>
+
+</html>

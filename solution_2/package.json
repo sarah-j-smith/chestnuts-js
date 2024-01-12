@@ -1,0 +1,13 @@
+{
+  "name": "session_2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "widget.js",
+  "scripts": {
+    "test": "node --test ./tests",
+    "start": "npx serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

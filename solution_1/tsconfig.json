@@ -1,0 +1,45 @@
+{
+    /* TS Config for editing and for Jest */
+    
+    "extends": "./tsconfig.base.json",
+
+    /* tests is needed here or else the Jest integration in VS Code won't work */
+    "files": [
+        "widget.ts", 
+        "MathExpression.ts",
+        "tests/MathExpression.test.ts"
+    ],
+
+    /* don't use tsc on the files in public_html */
+    "exclude": [
+        "public_html/**/*"
+    ],
+    
+    "compilerOptions": {
+      /* Visit https://aka.ms/tsconfig to read more about this file */
+
+      "outDir": "public_html/js",
+  
+      /* Projects */
+  
+      /* Language and Environment */
+      "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+  
+      /* Modules */
+      "module": "ES6",                                /* Specify what module code is generated. */
+  
+      /* JavaScript Support */
+  
+      /* Emit */
+  
+      /* Interop Constraints */
+      "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+      "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+  
+      /* Type Checking */
+      "strict": true,                                      /* Enable all strict type-checking options. */
+  
+      /* Completeness */
+      "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    }
+  }
